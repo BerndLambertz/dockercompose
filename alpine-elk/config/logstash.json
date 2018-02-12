@@ -3,9 +3,6 @@ input {
   http {
     port => [80, 8080, 5601, 9200]
   }
-  http {
-    port => 80
-  }
   tcp {
     port => 514
     type => syslog

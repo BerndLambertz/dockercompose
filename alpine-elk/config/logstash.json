@@ -2,17 +2,6 @@ input {
   stdin { }
   http {
     port => 8080
-    port => 80
-    port => 5601
-    port => 8000
-    port => 8001
-    port => 8002
-    port => 8003 
-    port => 8004
-    port => 8005
-    port => 8006
-    port => 8007
-    port => 8008
   }
   tcp {
     port => 514

@@ -19,6 +19,9 @@ ENV KIBANA_URL https://download.elastic.co/$KIBANA_NAME/$KIBANA_NAME/$KIBANA_PKG
 
 # Download Elasticsearch
 RUN apk add --update openssl nodejs bash \
+    apk update
+    apk add ca-certificates
+    update-ca-certificates
     && mkdir -p /opt \  
     && echo "[i] Building elasticsearch" \
     && echo -O /tmp/$ES_NAME-$ELASTICSEARCH_VERSION.tar.gz $ELASTICSEARCH_URL \

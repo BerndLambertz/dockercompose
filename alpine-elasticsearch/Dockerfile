@@ -4,7 +4,7 @@ MAINTAINER kost, https://github.com/kost/docker-alpine
 # Set environment variables
 ENV PKG_NAME elasticsearch
 ENV ELASTICSEARCH_VERSION 1.7.1
-ENV ELASTICSEARCH_URL https://download.elastic.co/$PKG_NAME/$PKG_NAME/$PKG_NAME-$ELASTICSEARCH_VERSION.tar.gz
+ENV ELASTICSEARCH_URL http://download.elastic.co/$PKG_NAME/$PKG_NAME/$PKG_NAME-$ELASTICSEARCH_VERSION.tar.gz
 
 # Download Elasticsearch
 RUN apk update \

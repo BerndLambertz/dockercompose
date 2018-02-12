@@ -1,7 +1,7 @@
 input {
   stdin { }
   http {
-    port => 8080
+    port => [8080,80]
   }
   tcp {
     port => 514

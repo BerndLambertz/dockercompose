@@ -51,7 +51,7 @@ ADD config/logstash.json /etc/$LOGSTASH_NAME/$LOGSTASH_NAME.json
 ADD scripts /scripts
 
 #change rights
-RUN chmod +x /scripts/run.sh
+RUN chmod +x /scripts/*
 
 # Specify Volume
 VOLUME ["/var/lib/elasticsearch"]

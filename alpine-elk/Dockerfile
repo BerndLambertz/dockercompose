@@ -50,6 +50,9 @@ COPY config/elasticsearch.yml /opt/elasticsearch/config/elasticsearch.yml
 ADD config/logstash.json /etc/$LOGSTASH_NAME/$LOGSTASH_NAME.json
 ADD scripts /scripts
 
+#change rights
+RUN chmod +x /scripts/run.sh
+
 # Specify Volume
 VOLUME ["/var/lib/elasticsearch"]
 

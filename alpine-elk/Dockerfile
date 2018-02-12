@@ -4,17 +4,17 @@ MAINTAINER kost, https://github.com/kost/docker-alpine
 # Set environment variables
 ENV ES_NAME elasticsearch
 ENV ELASTICSEARCH_VERSION 1.7.1
-ENV ELASTICSEARCH_URL https://download.elastic.co/$ES_NAME/$ES_NAME/$ES_NAME-$ELASTICSEARCH_VERSION.tar.gz
+ENV ELASTICSEARCH_URL http://download.elastic.co/$ES_NAME/$ES_NAME/$ES_NAME-$ELASTICSEARCH_VERSION.tar.gz
 
 ENV LOGSTASH_NAME logstash
 ENV LOGSTASH_VERSION 1.5.3
-ENV LOGSTASH_URL https://download.elastic.co/$LOGSTASH_NAME/$LOGSTASH_NAME/$LOGSTASH_NAME-$LOGSTASH_VERSION.tar.gz
+ENV LOGSTASH_URL http://download.elastic.co/$LOGSTASH_NAME/$LOGSTASH_NAME/$LOGSTASH_NAME-$LOGSTASH_VERSION.tar.gz
 
 ENV KIBANA_VERSION 4.1.1
 ENV KIBANA_NAME kibana
 ENV KIBANA_PKG $KIBANA_NAME-$KIBANA_VERSION-linux-x64
 ENV KIBANA_CONFIG /opt/$KIBANA_NAME-$KIBANA_VERSION-linux-x64/config/kibana.yml
-ENV KIBANA_URL https://download.elastic.co/$KIBANA_NAME/$KIBANA_NAME/$KIBANA_PKG.tar.gz
+ENV KIBANA_URL http://download.elastic.co/$KIBANA_NAME/$KIBANA_NAME/$KIBANA_PKG.tar.gz
 
 
 # Download Elasticsearch

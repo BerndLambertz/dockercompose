@@ -22,6 +22,9 @@ RUN apk update \
 COPY config/elasticsearch.yml /opt/elasticsearch/config/elasticsearch.yml
 COPY scripts/run.sh /scripts/run.sh
 
+#change rights
+RUN chmod +x /scripts/run.sh
+
 # Specify Volume
 VOLUME ["/var/lib/elasticsearch"]
 

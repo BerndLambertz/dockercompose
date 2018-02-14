@@ -11,6 +11,10 @@ input {
     port => 514
     type => syslog
   }
+  file{
+    type => "apache"
+    path => "/var/lib/elasticsearch/elasticsearch.log"
+  }
 }
 
 output {

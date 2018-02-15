@@ -57,7 +57,7 @@ RUN chmod +x /scripts/*
 VOLUME ["/var/lib/elasticsearch"]
 
 # Exposes
-EXPOSE 9200 9300 5601 514 514/udp 8080
+EXPOSE 9200 9300 5601 514 514/udp
 
 # CMD
 ENTRYPOINT ["/scripts/run.sh"]
